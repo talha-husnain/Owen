@@ -1,0 +1,28 @@
+.form-container {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: wheat;
+    margin-bottom: 15zpx;
+    margin-right: 200px;
+    padding: 10px;
+}
+.detail-header {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1px;
+    margin-top: 20px;
+    background-color: rgb(234, 110, 38);
+    padding: 10px;
+    margin-right: 800px;
+}
+#counter {
+    display: inline-block;
+    margin-right: 122px;
+}
+#cancel-habit {
+    color: red;
+}
+.failClass {
+    font-size: 20px;
+    color: red;
+}

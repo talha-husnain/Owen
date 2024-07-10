@@ -1,0 +1,19 @@
+.graph {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    height: 20px;
+    width: 525px;
+    border: 5px solid black;
+    background: white;
+    margin-bottom: -20px;
+}
+#habit-name {
+    color: orange;
+}
+#bar-element {
+    width: 25px;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+}
