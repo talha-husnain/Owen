@@ -7,7 +7,7 @@ import {
 import html from "./graph.component.html";
 import css from "./graph.component.css";
 
-export class GraphComponent extends EzComponent {
+export default class GraphComponent extends EzComponent {
     @BindValue("habit-name")
     private habitName: string;
 
@@ -26,9 +26,7 @@ export class GraphComponent extends EzComponent {
      *
      * @param amount - The pixels to add or remove from the graph bar width.
      */
-    public graphIncrement(amount: number): void {
+    public adjustBarWidth(amount: number): void {
         this.barWidth += amount;
     }
 }
-
-export default GraphComponent;

@@ -1,8 +1,8 @@
 import { EzComponent, BindValue, BindValueToNumber } from "@gsilber/webez";
 import html from "./habit-adder.component.html";
 import css from "./habit-adder.component.css";
-import { CheckboxComponent } from "../checkbox/checkbox.component";
-import { GraphComponent } from "../graph/graph.component";
+import CheckboxComponent from "../checkbox/checkbox.component";
+import GraphComponent from "../graph/graph.component";
 
 export class HabitAdderComponent extends EzComponent {
     @BindValue("habits")
@@ -66,4 +66,21 @@ export class HabitAdderComponent extends EzComponent {
     public setGoalNumber(newGoalNumber: number): void {
         this.goalNumber = newGoalNumber;
     }
+
+    /**
+     * Updates the associated graph component with a given amount.
+     * @param amount - The amount to adjust the graph by.
+     */
+    public updateGraph(amount: number): void {
+        this.graph.adjustBarWidth(amount);
+    }
+
+    /**
+     * Toggles the checkbox state and updates the completion dates accordingly.
+     */
+    public toggleCheckbox(): void {
+        this.checkbox.toggle();
+    }
 }
+
+export default HabitAdderComponent;

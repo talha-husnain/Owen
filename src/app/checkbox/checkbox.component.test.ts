@@ -1,5 +1,5 @@
 import { describe, expect, test, beforeAll } from "@jest/globals";
-import { CheckboxComponent } from "./checkbox.component";
+import CheckboxComponent from "./checkbox.component";
 import { bootstrap } from "@gsilber/webez";
 
 describe("CheckboxComponent", () => {
