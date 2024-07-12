@@ -1,7 +1,47 @@
-header {
+/* Container for the header */
+.header-container {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Styling for the header */
+.header {
     font-size: 20px;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Label for habit name */
+.habit-label,
+.goal-label {
+    font-weight: bold;
+    color: #666;
+    margin-right: 5px;
+}
+
+/* Displayed habit name */
+.habit-name {
+    color: #000;
+    font-weight: normal;
+}
+
+/* Displayed goal count */
+.goal-count {
+    color: #000;
+    font-weight: normal;
+}
+
+/* Hover effect for header container */
+.header-container:hover {
+    background-color: #e9e9e9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
