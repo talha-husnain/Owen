@@ -1,19 +1,40 @@
-.graph {
+/* Container for the graph bar and habit name */
+.graph-container {
     display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Styling for the graph bar */
+.graph-bar {
     height: 20px;
-    width: 525px;
-    border: 5px solid black;
-    background: white;
-    margin-bottom: -20px;
+    width: 25px; /* Initial width */
+    background-color: #4caf50;
+    border-radius: 3px;
+    transition: width 0.5s ease;
 }
-#habit-name {
-    color: orange;
+
+/* Styling for the habit name */
+.habit-name {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
-#bar-element {
-    width: 25px;
-    background-color: orange;
-    display: flex;
-    flex-wrap: wrap;
+
+/* Hover effect for graph container */
+.graph-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Habit name hover effect */
+.graph-container:hover .habit-name {
+    color: #000;
 }

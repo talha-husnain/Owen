@@ -1,54 +1,27 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Habit Tracker</title>
-        <meta name="description" content="Final Project by Owen Ambrose" />
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-            }
 
-            .header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker</title>
+    <meta name="description" content="Final Project by Owen Ambrose" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-            .title h1 {
-                margin: 0;
-                font-size: 24px;
-            }
-
-            .subtitle {
-                font-size: 16px;
-                color: #ccc;
-            }
-
-            #add-habit,
-            #habit-adder {
-                padding: 10px;
-                background-color: #fff;
-                margin: 10px auto;
-                width: 80%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="header">
+<body>
+    <header class="header">
+        <div class="container">
             <div class="title">
                 <h1>Habit Tracker</h1>
             </div>
             <div class="subtitle">Owen Ambrose Final Project</div>
         </div>
-        <div id="add-habit"></div>
-        <div id="habit-adder"></div>
-    </body>
+    </header>
+    <main>
+        <section id="add-habit" class="section"></section>
+        <section id="habit-adder" class="section"></section>
+    </main>
+</body>
+
 </html>
